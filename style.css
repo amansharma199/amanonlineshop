@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Crete Round', serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+.max_width{
+    max-width: 1300px;
+    padding: 0 30px;
+}
+
+.nav{
+    width: 100vw;
+    background-color: crimson;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    z-index: 99;
+    letter-spacing: 1px;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 10px;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.burger{
+    height: 15x;
+    width: 25px;
+    display: none;
+}
+
+.burger .line1, .line2, .line3{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* home styling start  */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(bg.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+.container .welcome{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 1px crimson;
+}
+
+.container .aman{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 1px crimson;
+}
+
+.container h3{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+
+/* services styling start  */
+
+.services{
+    width: 100vw;
+    height: auto;
+    /* background-color: yellow; */
+}
+
+/* title section same code for all title  */
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 70px;
+    position: relative;
+    /* letter-spacing: 2px; */
+}
+
+.title::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    width: 200px;
+    height: 3px;
+    background-color: crimson;
+    
+} 
+
+.title::after{
+    position: absolute;
+    content: "What I Provide";
+    left: 50%;
+    bottom: -7px;
+    transform: translate(-50%);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    padding: 0 15px;
+    color: crimson;
+}
+
+/* title section end  */
+
+
+.services_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service_left{
+    margin-top: 40px;
+    width: 50%;
+    padding: 50px;
+
+}
+
+.service_left img{
+    width: 100%;
+    background-size: cover;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    
+}
+
+
+.service_right{
+    width: 50%;
+    /* background-color: red; */
+}
+
+.service_right .title{
+    font-size: 15px;
+    padding-bottom: 12px;
+    
+}
+
+.service_right h2{
+    font-size: 30px;
+    padding: 0 0 0 30px;
+}
+
+.firsr_services{
+    margin-top: 15px;
+}
+
+/* team section start  */
+
+.team{
+    width: 100vw;
+    height: auto;
+    background-color:#fd79a8;
+    text-align: center;
+}
+
+.team .title::after{
+    content: "Who is in My Team";
+    background-color: #fd79a8;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.myteam{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.myteam h1{
+    font-size: 45px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}
+
+.myteam p{
+    color: rgb(0, 3, 1);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.397);
+}
+
+.anujsharma p{
+    padding-bottom: 100px;
+}
+
+/* contact styling start  */
+
+.contact{
+    width: 100vw;
+    height: auto;
+}
+
+.contact_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact_left{
+    width: 40%;
+}
+
+.address{
+    text-align: center;
+    width: 100%;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    margin-top: 68px;
+    padding: 40px 0px;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.452);
+}
+
+.address h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.address p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.contact_right{
+    margin-top: 66px;
+    margin-left: 50px;
+    margin-bottom: 80px;
+    width: 40%;
+    background-color: crimson;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.452);
+    padding: 32px 20px;
+}
+
+.contact_right input{
+    text-align: center;
+    width: 100%;
+    padding: 5px 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact_right #discription{
+    height: 140px;
+}
+
+.contact_right button{
+    width: 100%;
+    padding:5px 2px;
+    background-color: rgb(1, 209, 53);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+/* contact styling end  */
+
+
+.footer{
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer p{
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+/* media query section start for mobile view  */
+
+@media (max-width: 980px){
+    .contact_section{
+        display: block;
+    }
+
+    .contact_left{
+        width: 100%;
+    }
+
+    .contact_right{
+        margin-top: 66px;
+        margin-left: 0px;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width:768px){
+    .menu{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        cursor: pointer;
+        background-color: red;
+        transition: 0.3s ease-in-out;
+        
+    }
+
+    .menu ul{
+        background-color: rgba(64, 0, 241, 0.521);
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 0;
+    }
+    .menu ul li{
+        padding: 50px 0 0 0;
+        display: block;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul li a:hover{
+        color: yellow;
+    }
+
+    .logo{
+        font-size: 20px;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+        padding: 15px 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    /* home section styling  */
+
+    .container .welcome{
+        color: white;
+        font-size: 40px;
+    }
+
+    .container .aman{
+        color: white;
+        font-size: 35px;
+    }
+    
+    .container h3{
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 200;
+        font-size: 10px;
+    }
+
+    /* service section start  */
+
+    .services_container{
+        display: block;
+    }
+    
+    .service_left{
+        margin-top: 40px;
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    .service_right{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    .service_right .services_online{
+        font-size: 25px;
+    }
+
+    /* team section start  */
+
+    .myteam{
+        display: block;
+        justify-content: space-around;
+        margin-top: 15%;
+        text-align: center;
+    }
+    
+    .myteam h1{
+        font-size: 35px;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .myteam p{
+        color: rgb(0, 3, 1);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.397);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px){
+    .service_right .services_online{
+        font-size: 20px;
+    }
+
+    .team .title::after{
+        content: "My Team";
+        background-color: #fd79a8;
+        color: white;
+        letter-spacing: 0px;
+        font-weight: 200;
+    }
+
+}

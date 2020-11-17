@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="nav">
+        <div class="max_width">
+            <nav class="navbar">
+                <div class="logo">Aman Online Shop</div>
+                <div class="menu" id="menu">
+                    <ul>
+                        <li> <a href="#home">Home</a> </li>
+                        <li> <a href="#services">Services</a> </li>
+                        <li> <a href="#team">Team</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="burger" onclick="sidemenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- nav section end  -->
+
+    <!-- home section start  -->
+
+    <section class="home" id="home">
+        <div class="max_width">
+            <div class="container">
+                <h1 class="welcome">Welcome to</h1>
+                <h1 class="aman">Aman Online Shop</h1>
+                <h3>A shop that Provide all type of Online Related Services</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start  -->
+
+    <section class="services" id="services">
+        <div class="max_width">
+            <div class="title">
+                <h1>Services</h1>
+            </div>
+            <div class="services_container">
+                <div class="service_left"><img src="services.jpg"></div>
+                <div class="service_right">
+                    <div class="title"><h2>Services List</h2></div>
+
+                    <h2 class="firsr_services services_online">~ Online Service</h2>
+                    <h2 class="services_online">~ Zerox</h2>
+                    <h2 class="services_online">~ Print</h2>
+                    <h2 class="services_online">~ Pan Card Apply</h2>
+                    <h2 class="services_online">~ Caste, Income Certificate Apply</h2>
+                    <h2 class="services_online">~ Online Addmision Apply</h2>
+                    <h2 class="services_online">~ Lamination</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- team section start  -->
+
+    <section class="team" id="team">
+        <div class="max_width">
+            <div class="title">
+                <h1>Team</h1>
+            </div>
+           <div class="myteam">
+               <div class="amansharma">
+                   <h1>Aman Sharma</h1>
+                   <p>Founder of Aman Online Shop</p>
+               </div>
+               <div class="anujsharma">
+                <h1>Anuj Sharma</h1>
+                <p>CO-Founder of Aman Online Shop</p>
+               </div>
+           </div>
+              
+            </div>
+        </div>
+    </section>
+
+
+<!-- about section start  -->
+
+<section class="contact" id="contact">
+    <div class="max_width">
+        <div class="title">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact_section">
+            <div class="contact_left">
+                <div class="address">
+                    <h1>Address</h1>
+                    <p>Village+Post : Dubha</p><br>
+                    <p>Police Station : Sakra</p><br>
+                    <p>District : Muzaffarpur</p><br>
+                    <p>Bihar, 843104</p><br>
+                    <p>India</p>
+                </div>
+            </div>
+            <div class="contact_right">
+                <form action="#">
+                    <input type="text" id="name" placeholder="Input Your Name :">
+                    <input type="email" id="email" placeholder="Input Your Email Address :">
+                    <input type="text" id="discription"><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about section end  -->
+
+<!-- footer section start  -->
+
+<section class="footer">
+    <p>@Aman Online Shop</p>
+</section>
+
+<!-- footer section end  -->
+
+<!-- script start javascript  -->
+
+    <script>
+
+        function sidemenu(){
+            var x = document.getElementById('menu');
+            if (x.style.left === "-100%") {
+                    x.style.left = "0";
+                } else {
+                    x.style.left = "-100%";
+                }
+        }
+
+    </script>
+</body>
+</html>
