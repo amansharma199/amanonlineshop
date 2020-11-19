@@ -14,10 +14,10 @@
                 <div class="logo">Aman Online Shop</div>
                 <div class="menu" id="menu">
                     <ul>
-                        <li> <a href="#home">Home</a> </li>
-                        <li> <a href="#services">Services</a> </li>
-                        <li> <a href="#team">Team</a> </li>
-                        <li> <a href="#contact">Contact</a> </li>
+                        <li onclick="closemenu()"> <a href="#home">Home</a> </li>
+                        <li onclick="closemenu()"> <a href="#services">Services</a> </li>
+                        <li onclick="closemenu()"> <a href="#team">Team</a> </li>
+                        <li onclick="closemenu()"> <a href="#contact">Contact</a> </li>
                     </ul>
                 </div>
                 <div class="burger" onclick="sidemenu()">
@@ -142,6 +142,18 @@
                     x.style.left = "-100%";
                 }
         }
+        
+        function closemenu(){
+            var y = document.getElementById('menu');
+            if(y.style.left === "-100%") {
+                y.style.left = "0";
+            }
+            else {
+                y.style.left = "-100%";
+            }
+        }
+
+
 
     </script>
 </body>
